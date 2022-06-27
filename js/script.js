@@ -20,7 +20,7 @@
 
 
 let gallery = document.getElementById("gallery")
-const images = document.querySelectorAll("img")
+let images = document.querySelectorAll("img")
 
 // variabile active
 let active = 0;
@@ -48,8 +48,13 @@ prev.addEventListener('click', function () {
     images[active].classList.remove('active');
 // poi aggiungo quella che diventerà active
     active--;
-    if (active === 0) {
-        active = images.length;
+    if (active === -1) {
+        active = images.length-1;
+        console.log(images)
+        console.log(images.length)
+        console.log(active)
     }
+    console.log(active)
+    
     images[active].classList.add('active');
 })
