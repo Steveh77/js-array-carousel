@@ -1,4 +1,6 @@
 #carousel{
+    display: flex;
+    align-items: center;
     width: 700px;
     height: 400px;
     margin:  50px auto;
@@ -17,4 +19,10 @@ img{
 
 .active{
     display: block;
+}
+
+
+/* font size */
+.fsize-20px{
+    font-size: 50px;
 }
